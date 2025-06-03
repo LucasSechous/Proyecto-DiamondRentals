@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Proyecto 8.0 cositas</title>
+</head>
+
+<body class="grid-content"> 
+
+  <header>
+    <a href="/index.html" class="active"><img src="/img_logo/LogoBueno.jpg" height="80px"></a>
+
+    <!-- Botón de Menú hamburguesa visible en pantallas pequeñas -->
+    <button class="hamburger-menu" onclick="toggleMenu()">☰</button>
+
+    <nav>
+      <ul>
+        <li class="open-button" onclick="openForm()">Contáctenos</li>
+        <li><a href="/pages/sobreNosotros.html">Sobre Nosotros</a></li>
+        <li><a href="/pages/catalogo.html">Catalogo</a></li>
+        <div class="dropdown">
+          <button class="dropbtn">Modelos
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="/pages/supercoches.html">Supercoches</a>
+            <a href="/pages/supercoches.html">Sedan</a>
+            <a href="/pages/supercoches.html">SUV</a>
+
+          </div>
+      </ul>
+
+    </nav>
+
+    <!-- Menú lateral oculto -->
+    <div id="side-menu" class="side-menu">
+      <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">&times;</a>
+      <a href="/pages/sobreNosotros.html">Sobre Nosotros</a>
+      <a href="/pages/catalogo.html">Catálogo</a>
+      <a href="/pages/supercoches.html">Supercoches</a>
+      <a href="/pages/supercoches.html">Sedan</a>
+      <a href="/pages/supercoches.html">SUV</a>
+      <a href="#" onclick="openForm()">Contáctenos</a>
+    </div>
+
+  </header>
+
+  <div id="header2">
+    <img src="img/m5_fondo.jpg" style="width: 100%;">
+
+  </div>
+
+  <!--  --------------------------  POP UP  ------------------------------  -->
+
+  <div class="acomodar">
+    <div class="form-popup" id="myForm">
+      <form class="form-container">
+        <h1>Contáctenos</h1>
+        <br>
+        <label for="nombre"><b>Su Nombre</b></label>
+        <input type="text" placeholder="Jorge Martinez" name="nombre" required>
+
+        <label for="numero"><b>Numero de teléfono</b></label>
+        <input type="text" placeholder="099 123 456" name="numeroTel" required>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="nombreapellido@email.com" name="email" required>
+
+        <!-- <button type="submit" class="btn">Login</button> -->
+        <button type="submit" class="btn" onclick="closeForm()">Enviar</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Cerrar</button>
+      </form>
+    </div>
+  </div>
+
+  <!--  --------------------------------------------------------  -->
+
+
+  <main id="main">
+
+
+
+    <div id="informaciones" class="contenido">
+      <br>
+      <h1 id="tituloAlquiler"><strong>Alquiler de coches de lujo en Punta del Este</strong></h1> <br>
+      <h3 id="subtituloAlquiler"><b>Cuando pienses en alquilar un coche de lujo en Punta del Este para unas vacaciones
+          de
+          lujos y comodidades o una importante reunión de negocios, Servicios de alquiler de coches de lujo Diamond
+          Rentals en Punta es tu mejor opción. Selecciona tu modelo favorito y recógelo directamente en el lugar que
+          elijas de Punta del Este, Uruguay.
+        </b></h3>
+    </div>
+
+    <br><br>
+    <hr>
+    <br>
+    <h1 id="tituloTarjetas">Mas Relevantes</h1>
+    <br>
+    <br><br>
+    <div id="tarjetas" name="tarjetas" class="card_container">
+      <a href="pages/supercoches.html" id="anclas">
+        <div class="card">
+          <img src="img/ferrari_carrusel.jpg" alt="Avatar" style="width:100%" id="auto">
+          <div class="container">
+            <h4><b>Supercoche</b></h4>
+            <p>Ferrari 458 Italia</p>
+          </div>
+        </div>
+      </a>
+      <div class="card">
+        <img src="img/gtr_carrusel2.jpg" alt="Avatar" style="width:100%" id="auto">
+        <div class="container">
+          <h4><b>Supercoche</b></h4>
+          <p>Nissan GT-R</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/m4_carruselNuevo.jpg" alt="Avatar" style="width:100%" id="auto">
+        <div class="container">
+          <h4><b>Supercoche</b></h4>
+          <p>BMW M4 Competition</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/huracan_carrusel.jpg" alt="Avatar" style="width:100%" id="auto">
+        <div class="container">
+          <h4><b>Supercoche</b></h4>
+          <p>Lamborghini Huracan</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/aston-martin_carrusel (3).jpg" alt="Avatar" style="width:100%" id="auto">
+        <div class="container">
+          <h4><b>Supercoche</b></h4>
+          <p>Aston Martin DB11</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/m5_carrusel.jpg" alt="Avatar" style="width:100%" id="auto">
+        <div class="container">
+          <h4><b>Sedan</b></h4>
+          <p>BMW M5</p>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div id="btnMas">
+      <button id="botonCatalogo"><a href="pages/catalogo.html">Mostrar Mas</a></button>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div id="informaciones" class="contenido">
+      <h1 id="tituloAlquiler"><strong>Alquiler de coches de lujo en Punta del Este</strong></h1>
+      <br>
+      <h3 id="subtituloAlquiler"><b>Alquiler de coches de lujo en Punta del Este. Alquila coches de lujo como Ferrari,
+          Porsche, Masserati, BMW y Mercedes Benz para disfrutar de Punta del Este.</b></h3>
+      <h3 id="subtituloAlquiler"><b>Diamond Rentals es una Agencia de Alquiler de coches de Lujo en Punta del Este
+          ofreciendo servicios premium, traslados privados y experiencias de vida únicas para particulares y empresas
+          exigentes. La mejor opción para alquilar tu coche de lujo en Punta del Este.</b></h3>
+    </div>
+    <br><br>
+
+  </main>
+
+  <footer id="footer">
+
+    <div id="imgFooter">
+      <img src="img_logo/LogoConAuto.jpg" alt="logo con auto" height="200px">
+    </div>
+
+    <div id="info">
+      <h3>diamondrentals@gmail.com</h3>
+      <br>
+      <hr><br>
+      <h3>Calle Juan Gorlero | Esquina calle 19</h3>
+      <br>
+      <hr><br>
+      <h3>099 123 345</h3>
+
+    </div>
+
+    <div id="media">
+      <h2 id="txtMedia">Siguenos</h2>
+      <br><br>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-whatsapp"></a>
+    </div>
+
+  </footer>
+  <div id="footer2">
+    <small>&copy; 2024 <b>Diamond Rentals</b> - Todos los derechos reservados</small>
+  </div>
+</body>
+<script src="/js.js"></script>
+
+</html>

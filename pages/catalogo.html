@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/styles/stylesCatalogo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Catalogo</title>
+</head>
+
+<body class="grid-content">
+
+  <header>
+    <a href="/index.html" class="active"><img src="/img_logo/LogoBueno.jpg" height="80px"></a>
+
+    <!-- Botón de Menú hamburguesa visible en pantallas pequeñas -->
+    <button class="hamburger-menu" onclick="toggleMenu()">☰</button>
+
+    <nav>
+      <ul>
+        <li class="open-button" onclick="openForm()">Contáctenos</li>
+        <li><a href="/pages/sobreNosotros.html">Sobre Nosotros</a></li>
+        <li><a href="/pages/catalogo.html">Catalogo</a></li>
+        <div class="dropdown">
+          <button class="dropbtn">Modelos
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="/pages/supercoches.html">Supercoches</a>
+            <a href="/pages/sedanes.html">Sedan</a>
+            <a href="/pages/suv.html">SUV</a>
+
+          </div>
+      </ul>
+    </nav>
+
+    <!-- Menú lateral oculto -->
+    <div id="side-menu" class="side-menu">
+      <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">&times;</a>
+      <a href="/pages/sobreNosotros.html">Sobre Nosotros</a>
+      <a href="/pages/catalogo.html">Catálogo</a>
+      <a href="/pages/supercoches.html">Supercoches</a>
+      <a href="/pages/supercoches.html">Sedan</a>
+      <a href="/pages/supercoches.html">SUV</a>
+      <a href="#" onclick="openForm()">Contáctenos</a>
+    </div>
+
+  </header>
+
+  <div id="header2">
+    <img src="/img/m5_fondo.jpg" style="width: 100%;">
+    <h2 id="tituloPorsche">Porsche</h2>
+
+  </div>
+
+  <main id="main">
+
+    <div id="tarjetas" name="tarjetas" class="card_container">
+
+      <a href="/pages/porsche.html" id="anclas">
+        <div class="card">
+          <img src="/img_logosMarcas/Porshe.jpg" alt="Avatar" style="width:100% " id="LogosID">
+          <div class="container">
+            <h4><b>PORSCHE</b></h4>
+          </div>
+        </div>
+      </a>
+      <div class="card">
+        <img src="/img_logosMarcas/ferrari.jpg" alt="Avatar" style="width:100%" id="LogosID">
+        <div class="container">
+          <h4><b>FERRARI</b></h4>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/img_logosMarcas/merc.jpg" alt="Avatar" style="width:100%" id="LogosID">
+        <div class="container">
+          <h4><b>MERCEDES</b></h4>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/img_logosMarcas/audi.jpg" alt="Avatar" style="width:100%" id="LogosID">
+        <div class="container">
+          <h4><b>AUDI</b></h4>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/img_logosMarcas/bmw.jpg" alt="Avatar" style="width:100%" id="LogosID">
+        <div class="container">
+          <h4><b>BMW</b></h4>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/img_logosMarcas/nissan.jpg" alt="Avatar" style="width:100% " id="LogosID">
+        <div class="container">
+          <h4><b>NISSAN</b></h4>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/img_logosMarcas/aston.jpg" alt="Avatar" style="width:100% " id="LogosID">
+        <div class="container">
+          <h4><b>ASTON MARTIN</b></h4>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/img_logosMarcas/coquete.jpg" alt="Avatar" style="width:100% " id="LogosID">
+        <div class="container">
+          <h4><b>CHEVROLET</b></h4>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/img_logosMarcas/maserati.jpg" alt="Avatar" style="width:100% " id="LogosID">
+        <div class="container">
+          <h4><b>MASERATI</b></h4>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/img_logosMarcas/nissan.jpg" alt="Avatar" style="width:100% " id="LogosID">
+        <div class="container">
+          <h4><b>MCLAREN</b></h4>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+  </main>
+
+  <footer id="footer">
+
+    <img src="/img_logo/LogoConAuto.jpg" alt="logo con auto" height="200px">
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <a href="#" class="fa fa-whatsapp"></a>
+
+
+
+  </footer>
+</body>
+<script src="/js.js"></script>
+
+</html>

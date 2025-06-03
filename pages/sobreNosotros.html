@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Sobre Nosotros | Diamond Rentals</title>
+</head>
+
+<body class="grid-content">
+
+    <header>
+        <a href="/index.html" class="active"><img src="/img_logo/LogoBueno.jpg" height="80px"></a>
+
+        <!-- Botón de Menú hamburguesa visible en pantallas pequeñas -->
+        <button class="hamburger-menu" onclick="toggleMenu()">☰</button>
+
+        <nav>
+            <ul>
+                <li class="open-button" onclick="openForm()">Contáctenos</li>
+                <li><a href="/pages/sobreNosotros.html">Sobre Nosotros</a></li>
+                <li><a href="/pages/catalogo.html">Catalogo</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Modelos
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/pages/supercoches.html">Supercoches</a>
+                        <a href="/pages/supercoches.html">Sedan</a>
+                        <a href="/pages/supercoches.html">SUV</a>
+
+                    </div>
+            </ul>
+
+        </nav>
+
+        <!-- Menú lateral oculto -->
+        <div id="side-menu" class="side-menu">
+            <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">&times;</a>
+            <a href="/pages/sobreNosotros.html">Sobre Nosotros</a>
+            <a href="/pages/catalogo.html">Catálogo</a>
+            <a href="/pages/supercoches.html">Supercoches</a>
+            <a href="/pages/supercoches.html">Sedan</a>
+            <a href="/pages/supercoches.html">SUV</a>
+            <a href="#" onclick="openForm()">Contáctenos</a>
+        </div>
+
+    </header>
+
+    <div id="header2">
+        <img src="/img/m5_fondo.jpg" style="width: 100%;">
+
+    </div>
+
+    <!--  --------------------------  POP UP  ------------------------------  -->
+
+    <div class="acomodar">
+        <div class="form-popup" id="myForm">
+            <form class="form-container">
+                <h1>Contáctenos</h1>
+                <br>
+                <label for="nombre"><b>Su Nombre</b></label>
+                <input type="text" placeholder="Jorge Martinez" name="nombre" required>
+
+                <label for="numero"><b>Numero de teléfono</b></label>
+                <input type="text" placeholder="099 123 456" name="numeroTel" required>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="nombreapellido@email.com" name="email" required>
+
+                <!-- <button type="submit" class="btn">Login</button> -->
+                <button type="submit" class="btn" onclick="closeForm()">Enviar</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Cerrar</button>
+            </form>
+        </div>
+    </div>
+
+    <!--  --------------------------------------------------------  -->
+
+
+    <main>
+
+        <div id="Contenido" class="sobrenos-conteiner">
+
+            <div id="InfoSN">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate rerum corrupti omnis ullam vel?
+                    Architecto, aperiam impedit hic quas voluptatem dolorum recusandae sint alias cum, mollitia quis
+                    necessitatibus delectus cumque?</p>
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas harum dolores consectetur saepe
+                repellat voluptatum sunt distinctio, illo assumenda sapiente odio nemo libero facere veritatis nostrum
+                aperiam, reprehenderit sed amet.
+
+            </div>
+
+            <div id="maps">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d952.2148069768261!2d-54.9473168468684!3d-34.964638196262776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95750571a889bb13%3A0x646a81c52d18e24d!2sEdificio%20Porto%20Scala!5e1!3m2!1ses-419!2suy!4v1724012302753!5m2!1ses-419!2suy"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer id="footer">
+
+        <div id="imgFooter">
+            <img src="/img_logo/LogoConAuto.jpg" alt="logo con auto" height="200px">
+        </div>
+
+        <div id="info">
+            <h3>diamondrentals@gmail.com</h3>
+            <br>
+            <hr><br>
+            <h3>Calle Juan Gorlero | Esquina calle 19</h3>
+            <br>
+            <hr><br>
+            <h3>099 123 345</h3>
+
+        </div>
+
+        <div id="media">
+            <h2 id="txtMedia">Siguenos</h2>
+            <br><br>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-whatsapp"></a>
+        </div>
+
+    </footer>
+    <div id="footer2">
+        <small>&copy; 2024 <b>Diamond Rentals</b> - Todos los derechos reservados</small>
+    </div>
+
+</body>
+<script src="/js.js"></script>
+
+</html>
